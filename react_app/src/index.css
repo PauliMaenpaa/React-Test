@@ -19,6 +19,11 @@ html, body {
   font-size: 10px;
 }
 
+body {
+  min-height: 100vh;
+  background-color: #0D1B2A;
+}
+
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
