@@ -1,0 +1,30 @@
+#navigation {
+    display: flex;
+    border: 1px solid white;
+    height: auto;
+}
+
+#navigation-left-section {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    min-height: 10em;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navigation-left-section li a {
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#navigation-right-section {
+    min-height: 10em;
+    display: flex;
+    flex: 1;
+
+    padding: 0;
+    margin: 0;
+}
