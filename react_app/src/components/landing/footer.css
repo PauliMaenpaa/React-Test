@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2.5em;
 
     position: fixed;
     bottom: 0;
@@ -18,5 +19,19 @@
     font-size: 2em;
     padding: 0;
     margin: 0;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#footer .logo {
+    max-width: 2em;
+    
+    /*png väriä ei voida suoraan muuttaa css, koska se formaatti on rasterikuva, eli pikselit ovat kiinteitä värejä*/
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+    opacity: 0.5;
+
+    transition: opacity 0.2s ease;
+}
+
+#footer .logo:hover {
+    opacity: 1;
 }
