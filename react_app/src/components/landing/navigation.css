@@ -1,13 +1,39 @@
 #navigation {
     display: flex;
+    justify-content: center;
     height: auto;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: hsla(0, 0%, 0%, 0.2);
+    position: fixed;
+    min-width: 100%;
+    z-index: 2;
+    backdrop-filter: blur(0.3em);
 }
 
-#navigation-left-section {
+#navigation-links-container {
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+    align-items: center;
     min-height: 10em;
+    background-color: transparent;
 }
 
-#navigation-right-section {
-    min-height: 10em;
+#navigation-links-container button {
+    border: none;
+    width: 4.5em;
+    padding: 0.4em;
+    font-size: 2em;
+
+    border: 0.1em solid rgba(255, 255, 255, 0.9);
+    background-color: transparent;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    transition: color 0.2s ease, background-color 0.2s ease, border 0.2s ease;
+}
+
+#navigation-links-container button:hover {
+    color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 0.1em solid transparent;
 }
