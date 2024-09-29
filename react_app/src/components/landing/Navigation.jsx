@@ -1,13 +1,17 @@
+import { useNavigate } from 'react-router-dom';
 import "./navigation.css";
 
 function Navigation() {
+
+    const navigate = useNavigate();
+
     return (
       <nav id="navigation">
         <div id="navigation-links-container">
-          <button>Home</button>
-          <button>About</button>
-          <button>Projects</button>
-          <button>Contact</button>
+          <button onClick={() => navigate('/')}>Home</button>
+          <button onClick={() => navigate('/weather')}>Weather</button>
+          <button>Geolocation</button>
+          <button>Gallery</button>
         </div>
       </nav>
     );
