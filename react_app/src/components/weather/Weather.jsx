@@ -9,7 +9,6 @@ function Weather() {
     useEffect(() => {
         const fetchWeather = async () => {
             const apiKey = import.meta.env.VITE_OPENWEATHER_API_KEY;
-            // const city = "Seinajoki";
             const lon = 24.9236026;
             const lat = 60.1867356;
             const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
