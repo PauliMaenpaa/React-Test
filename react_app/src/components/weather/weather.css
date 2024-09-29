@@ -6,15 +6,35 @@
     align-items: center;
 }
 
-#weather-container h1 {
+#weather-info-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+/* #weather-container h1 {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 5em;
+    z-index: 1;
+} */
+
+/* #weather-container p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 2.5em;
+    z-index: 1;
+} */
+
+#weather-info-container h1 {
     color: rgba(255, 255, 255, 0.75);
     font-size: 5em;
     z-index: 1;
 }
 
-#weather-container p {
+#weather-info-container p {
     color: rgba(255, 255, 255, 0.75);
     font-size: 2.5em;
     z-index: 1;
 }
-

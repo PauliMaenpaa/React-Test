@@ -11,7 +11,7 @@ function Navigation() {
           <button onClick={() => navigate('/')}>Home</button>
           <button onClick={() => navigate('/weather')}>Weather</button>
           <button onClick={() => navigate('/geolocation')}>Geolocation</button>
-          <button>Gallery</button>
+          <button onClick={() => navigate('/gallery')}>Gallery</button>
         </div>
       </nav>
     );
