@@ -10,7 +10,7 @@ function Navigation() {
         <div id="navigation-links-container">
           <button onClick={() => navigate('/')}>Home</button>
           <button onClick={() => navigate('/weather')}>Weather</button>
-          <button>Geolocation</button>
+          <button onClick={() => navigate('/geolocation')}>Geolocation</button>
           <button>Gallery</button>
         </div>
       </nav>

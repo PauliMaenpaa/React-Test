@@ -1,0 +1,23 @@
+#geolocation-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#geolocation-container h1 {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 5em;
+    z-index: 1;
+}
+
+#geolocation-container #latitude-and-longitude {
+    z-index: 1;
+}
+
+#latitude-and-longitude p {
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}

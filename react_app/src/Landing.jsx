@@ -5,6 +5,7 @@ import Navigation from './components/landing/Navigation';
 import Footer from './components/landing/Footer';
 import MainContent from './components/landing/MainContent'
 import Weather from './components/weather/Weather';
+import Geolocation from './components/geolocation/Geolocation';
 import BgVideo from './img/landing-bg-video.mp4';
 
 function Landing() {
@@ -15,6 +16,7 @@ function Landing() {
       <Routes>
         <Route path="/" element={<MainContent/>}/>
         <Route path="/weather" element={<Weather/>}/>
+        <Route path="/geolocation" element={<Geolocation/>}/>
       </Routes>
       <Footer />
     </Router>
